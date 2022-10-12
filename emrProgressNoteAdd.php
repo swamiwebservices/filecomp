@@ -529,9 +529,11 @@ tr {
                                                             class="col-md-9   m-b-10   hidedefault blockdiv block_name_5">
                                                             <div
                                                                 class="row p-t-10 container-space pull-left1 wordBreak ">
+                                                                
                                                                 <div class="link col-md-1checkbox "
                                                                     data-toggle="tooltip" data-placement="bottom"
                                                                     title="" data-original-title="">
+                                                                     
                                                                     <input type="checkbox"
                                                                         class="field_type_checkbox_2 checkboxclick check_text_5_1 Diagnostic"
                                                                         value="Weakness / Loss Of Strength"
@@ -622,6 +624,9 @@ tr {
                                                             <div class="row p-t-10">
                                                                 <label
                                                                     class="container-space pull-left1 wordBreak col-md-4">
+                                                                    
+                                                                    
+                                                                    
                                                                     <?php echo (!empty($getEmrDataPrev['Demographic']['Conditionstatus']['radio']) && $getEmrDataPrev['Demographic']['Conditionstatus']['radio']=="Non-op") ? ' <img src="'.base_url().'/assets/images/ap.png" class="zz">' : '' ?>
                                                                     
                                                                     <span class="link col-md-1 marginTopMinus2">
@@ -630,6 +635,7 @@ tr {
                                                                     </span>
                                                                     <span
                                                                         class="col-md-20 fonweightnormal wordBreak capitalize marginLeftMinus5">Non-op</span>
+ 
                                                                 </label>
                                                                 <label
                                                                     class="container-space pull-left1 wordBreak col-md-4">
@@ -670,7 +676,7 @@ tr {
                                                         <div
                                                             class="col-md-12 m-b-10   hidedefault blockdiv block_name_8">
                                                             <div class="row" id="Past">
-                                                            <table class="table table-bordered mt-3 "
+                                                                <table class="table table-bordered mt-3 "
                                                                     style="padding:1rem;">
                                                                     <tr style="line-height:25px ;">
                                                                         <td>Disease</td>
@@ -1503,7 +1509,7 @@ tr {
                                                     </div>
                                                 </div>
                                                 <!--end of new block10 -->
-                                                 <!--newblock11 -->
+                                                <!--newblock11 -->
                                                 <div class="col-sm-12 m-b-10">
                                                     <div id="101Field-1-11" class="row">
                                                         <div class="col-md-12 labelclass semibold container-space lessgreyTxt showblocks"
@@ -1523,7 +1529,7 @@ tr {
                                                                     </div>
                                                                     <div class="col-md-12 m-b-10">
                                                                         <div class="irs-demo m-b-30">
-                                                                            <input type="text" name="Demographic[VAS_and_Pain_Details][emr_rest_range]" id="emr_rest_range"
+                                                                            <input type="text" id="emr_rest_range"
                                                                                 value="" />
                                                                         </div>
                                                                     </div>
@@ -1532,7 +1538,7 @@ tr {
                                                                     </div>
                                                                     <div class="col-md-12 m-b-10    ">
                                                                         <div class="irs-demo m-b-30">
-                                                                            <input type="text" name="Demographic[VAS_and_Pain_Details][emr_activity_range]" id="emr_activity_range"
+                                                                            <input type="text" id="emr_activity_range"
                                                                                 value="" />
                                                                         </div>
                                                                     </div>
@@ -1595,63 +1601,66 @@ tr {
                                                                         <div class="col-md-4">
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Aggravating_Factors_Movement" name="Demographic[Aggravating_Factors][checkbox][Movement]" <?php echo (!empty($raw_data['Demographic']['Aggravating_Factors']['checkbox']['Movement'])) ? ' checked' : '' ?> value="Movement" />
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck1" />
                                                                                 <label class="custom-control-label"
-                                                                                    for="Aggravating_Factors_Movement">Movement</label>
+                                                                                    for="customCheck1">Movement</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick "
-                                                                                    id="Aggravating_Factors_Coughing" name="Demographic[Aggravating_Factors][checkbox][Aggravating_Factors_Coughing]" <?php echo (!empty($raw_data['Demographic']['Aggravating_Factors']['checkbox']['Aggravating_Factors_Coughing'])) ? ' checked' : '' ?> value="Coughing/Sneezing"  />
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck2" />
                                                                                 <label class="custom-control-label"
-                                                                                    for="Aggravating_Factors_Coughing">Coughing/Sneezing</label>
+                                                                                    for="customCheck2">Coughing/Sneezing</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Aggravating_Factors_Bending" name="Demographic[Aggravating_Factors][checkbox][Aggravating_Factors_Bending]" <?php echo (!empty($raw_data['Demographic']['Aggravating_Factors']['checkbox']['Aggravating_Factors_Bending'])) ? ' checked' : '' ?> value="Bending" />
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3" />
                                                                                 <label class="custom-control-label"
-                                                                                    for="Aggravating_Factors_Bending">Bending</label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-4">
-                                                                            <div class="custom-control custom-checkbox">
-                                                                                <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Aggravating_Factors_Heat" name="Demographic[Aggravating_Factors][checkbox][Aggravating_Factors_Heat]" <?php echo (!empty($raw_data['Demographic']['Aggravating_Factors']['checkbox']['Aggravating_Factors_Heat'])) ? ' checked' : '' ?> value="Heat" />
-                                                                                <label class="custom-control-label"
-                                                                                    for="Aggravating_Factors_Heat">Heat</label>
-                                                                            </div>
-                                                                            <div class="custom-control custom-checkbox">
-                                                                                <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Aggravating_Factors_Ice" name="Demographic[Aggravating_Factors][checkbox][Aggravating_Factors_Ice]" <?php echo (!empty($raw_data['Demographic']['Aggravating_Factors']['checkbox']['Aggravating_Factors_Ice'])) ? ' checked' : '' ?> value="Ice"  />
-                                                                                <label class="custom-control-label"
-                                                                                    for="Aggravating_Factors_Ice">Ice</label>
-                                                                            </div>
-                                                                            <div class="custom-control custom-checkbox">
-                                                                                <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Aggravating_Factors_day_morning" name="Demographic[Aggravating_Factors][checkbox][Aggravating_Factors_day_morning]" <?php echo (!empty($raw_data['Demographic']['Aggravating_Factors']['checkbox']['Aggravating_Factors_day_morning'])) ? ' checked' : '' ?> value="Time of day -morning"  />
-                                                                                <label class="custom-control-label"
-                                                                                    for="Aggravating_Factors_day_morning">Time of day -morning</label>
+                                                                                    for="customCheck3">Bending</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-4">
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Aggravating_Factors_day_night" name="Demographic[Aggravating_Factors][checkbox][Aggravating_Factors_day_night]" <?php echo (!empty($raw_data['Demographic']['Aggravating_Factors']['checkbox']['Aggravating_Factors_day_night'])) ? ' checked' : '' ?> value="Time of day - night"  />
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck" />
                                                                                 <label class="custom-control-label"
-                                                                                    for="Aggravating_Factors_day_night">Time of day - night </label>
+                                                                                    for="customCheck">Heat</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Aggravating_Factors_day_sustained" name="Demographic[Aggravating_Factors][checkbox][Aggravating_Factors_day_sustained]" <?php echo (!empty($raw_data['Demographic']['Aggravating_Factors']['checkbox']['Aggravating_Factors_day_sustained'])) ? ' checked' : '' ?>  value="Rest/Sustained position" />
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck" />
                                                                                 <label class="custom-control-label"
-                                                                                    for="Aggravating_Factors_day_sustained">Rest/Sustained position</label>
+                                                                                    for="customCheck">Ice</label>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input type="checkbox"
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck" />
+                                                                                <label class="custom-control-label"
+                                                                                    for="customCheck">Time of day -
+                                                                                    morning</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input type="checkbox"
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck" />
+                                                                                <label class="custom-control-label"
+                                                                                    for="customCheck">Time of day -
+                                                                                    night </label>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input type="checkbox"
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck" />
+                                                                                <label class="custom-control-label"
+                                                                                    for="customCheck">Rest/sustained
+                                                                                    position</label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1664,49 +1673,50 @@ tr {
                                                                         <div class="col-md-4">
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Relieving_Factors_Movement"  name="Demographic[Relieving_Factors][checkbox][Relieving_Factors_Movement]" <?php echo (!empty($raw_data['Demographic']['Relieving_Factors']['checkbox']['Relieving_Factors_Movement'])) ? ' checked' : '' ?>  />
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck1" />
                                                                                 <label class="custom-control-label"
-                                                                                    for="Relieving_Factors_Movement">Movement</label>
+                                                                                    for="customCheck1">Movement</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Relieving_Factors_sleep" name="Demographic[Relieving_Factors][checkbox][Relieving_Factors_sleep]" <?php echo (!empty($raw_data['Demographic']['Relieving_Factors']['checkbox']['Relieving_Factors_sleep'])) ? ' checked' : '' ?>  />
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck2" />
                                                                                 <label class="custom-control-label"
-                                                                                    for="Relieving_Factors_sleep">Rest/Sleep</label>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-md-4">
-                                                                            <div class="custom-control custom-checkbox">
-                                                                                <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Relieving_Factors_Sneezing" name="Demographic[Relieving_Factors][checkbox][Relieving_Factors_Sneezing]" <?php echo (!empty($raw_data['Demographic']['Relieving_Factors']['checkbox']['Relieving_Factors_Sneezing'])) ? ' checked' : '' ?>  />
-                                                                                <label class="custom-control-label"
-                                                                                    for="Relieving_Factors_Sneezing">Coughing/Sneezing</label>
-                                                                            </div>
-                                                                            <div class="custom-control custom-checkbox">
-                                                                                <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Relieving_Factors_Bending" name="Demographic[Relieving_Factors][checkbox][Relieving_Factors_Bending]" <?php echo (!empty($raw_data['Demographic']['Relieving_Factors']['checkbox']['Relieving_Factors_Bending'])) ? ' checked' : '' ?>  />
-                                                                                <label class="custom-control-label"
-                                                                                    for="Relieving_Factors_Bending">Bending</label>
+                                                                                    for="customCheck2">Rest /
+                                                                                    sleep</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-4">
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Relieving_Factors_Heat" name="Demographic[Relieving_Factors][checkbox][Relieving_Factors_Heat]" <?php echo (!empty($raw_data['Demographic']['Relieving_Factors']['checkbox']['Relieving_Factors_Heat'])) ? ' checked' : '' ?>  />
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3" />
                                                                                 <label class="custom-control-label"
-                                                                                    for="Relieving_Factors_Heat">Heat</label>
+                                                                                    for="customCheck3">Coughing/Sneezing</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Relieving_Factors_Ice" name="Demographic[Relieving_Factors][checkbox][Relieving_Factors_Ice]" <?php echo (!empty($raw_data['Demographic']['Relieving_Factors']['checkbox']['Relieving_Factors_Ice'])) ? ' checked' : '' ?>  />
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck" />
                                                                                 <label class="custom-control-label"
-                                                                                    for="Relieving_Factors_Ice">Ice</label>
+                                                                                    for="customCheck">Bending</label>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-md-4">
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input type="checkbox"
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck" />
+                                                                                <label class="custom-control-label"
+                                                                                    for="customCheck">Heat</label>
+                                                                            </div>
+                                                                            <div class="custom-control custom-checkbox">
+                                                                                <input type="checkbox"
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck" />
+                                                                                <label class="custom-control-label"
+                                                                                    for="customCheck">Ice</label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -1717,8 +1727,7 @@ tr {
                                                                     <p class="boldfont">Other</p>
                                                                 </div>
                                                                 <div class="col-md-9"><input type="text"
-                                                                        class="form-control" placeholder="Info" name="Demographic[Relieving_Factors][text][Other]"  value="<?php echo (!empty($raw_data['Demographic']['Relieving_Factors']['text']['Other'])) ? $raw_data['Demographic']['Relieving_Factors']['text']['Other'] : '' ?>" >
-                                                                    </div>
+                                                                        class="form-control" placeholder="Info" /></div>
                                                             </div>
                                                         </div>
                                                         <div class="clearfix"></div>
@@ -1744,334 +1753,332 @@ tr {
                                                                         <div class="col-md-4">
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Movement" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Movement]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Movement'])) ? ' checked' : '' ?> />
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck1">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Movement">Movement</label>
+                                                                                    for="customCheck1">Movement</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Lying_Down" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Lying_Down]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Lying_Down'])) ? ' checked' : '' ?> >
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck2">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Lying_Down">Lying
+                                                                                    for="customCheck2">Lying
                                                                                     Down</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick" 
-                                                                                    id="Activities_of_Current_Limitations_Prone_lying" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Prone_lying]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Prone_lying'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Prone_lying"> Prone
+                                                                                    for="customCheck3"> Prone
                                                                                     lying</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Bed_mobility" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Bed_mobility]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Bed_mobility'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Bed_mobility">Bed
+                                                                                    for="customCheck">Bed
                                                                                     mobility</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Supine_To_Sitting" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Supine_To_Sitting]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Supine_To_Sitting'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck1">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Supine_To_Sitting">Supine To
+                                                                                    for="customCheck1">Supine To
                                                                                     Sitting</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Supine_To_Side_Lying" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Supine_To_Side_Lying]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Supine_To_Side_Lying'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck2">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Supine_To_Side_Lying">Supine To Side
+                                                                                    for="customCheck2">Supine To Side
                                                                                     Lying</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Sitting_To_Standing" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Sitting_To_Standing]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Sitting_To_Standing'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Sitting_To_Standing">Sitting To
+                                                                                    for="customCheck3">Sitting To
                                                                                     Standing</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Sustained_Sitting" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Sustained_Sitting]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Sustained_Sitting'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Sustained_Sitting">Sustained Sitting
+                                                                                    for="customCheck">Sustained Sitting
                                                                                     Unsupported</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Standing_Up_From_A_Seated_Position" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Standing_Up_From_A_Seated_Position]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Standing_Up_From_A_Seated_Position'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Standing_Up_From_A_Seated_Position">Standing Up From
+                                                                                    for="customCheck3">Standing Up From
                                                                                     A Seated Position</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Sustained_Standing" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Sustained_Standing]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Sustained_Standing'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Sustained_Standing">Sustained
+                                                                                    for="customCheck">Sustained
                                                                                     Standing</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Sitting_after_sustained_standing" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Sitting_after_sustained_standing]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Sitting_after_sustained_standing'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck1">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Sitting_after_sustained_standing">Sitting after
+                                                                                    for="customCheck1">Sitting after
                                                                                     sustained standing</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Standing_after_sustained_sitting" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Standing_after_sustained_sitting]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Standing_after_sustained_sitting'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck2">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Standing_after_sustained_sitting"> Standing after
+                                                                                    for="customCheck2"> Standing after
                                                                                     sustained sitting</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Transferring_In_Out_Of_The_Chair" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Transferring_In_Out_Of_The_Chair]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Transferring_In_Out_Of_The_Chair'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Transferring_In_Out_Of_The_Chair">Transferring
+                                                                                    for="customCheck3">Transferring
                                                                                     In/Out Of The Chair</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Transferring_In_Out_Of_The_Car" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Transferring_In_Out_Of_The_Car]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Transferring_In_Out_Of_The_Car'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Transferring_In_Out_Of_The_Car">Transferring
+                                                                                    for="customCheck">Transferring
                                                                                     In/Out Of The Car</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-4">
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Walking" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Walking]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Walking'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Walking">Walking</label>
+                                                                                    for="customCheck3">Walking</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Ascending_stairs" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Ascending_stairs]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Ascending_stairs'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Ascending_stairs">Ascending
+                                                                                    for="customCheck">Ascending
                                                                                     stairs</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Descending_stairs" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Descending_stairs]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Descending_stairs'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck1">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Descending_stairs">Descending
+                                                                                    for="customCheck1">Descending
                                                                                     stairs</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Kneeling" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Kneeling]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Kneeling'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck2">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Kneeling">Kneeling</label>
+                                                                                    for="customCheck2">Kneeling</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Running" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Running]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Running'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Running">Running</label>
+                                                                                    for="customCheck3">Running</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Jumping" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Jumping]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Jumping'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Jumping">Jumping</label>
+                                                                                    for="customCheck">Jumping</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Squatting" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Squatting]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Squatting'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck1">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Squatting">Squatting</label>
+                                                                                    for="customCheck1">Squatting</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Bending" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Bending]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Bending'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck2">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Bending">Bending</label>
+                                                                                    for="customCheck2">Bending</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Cooking" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Cooking]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Cooking'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Cooking">Cooking</label>
+                                                                                    for="customCheck3">Cooking</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Bending" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Bending]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Bending'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Bending">Bending</label>
+                                                                                    for="customCheck">Bending</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Household_Chores" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Household_Chores]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Household_Chores'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck1">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Household_Chores">Household
+                                                                                    for="customCheck1">Household
                                                                                     Chores</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Self_Care" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Self_Care]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Self_Care'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck2">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Self_Care">Self –
+                                                                                    for="customCheck2">Self –
                                                                                     Care</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Child_Care" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Child_Care]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Child_Care'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Child_Care">Child –
+                                                                                    for="customCheck3">Child –
                                                                                     Care</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Professional_Responsibilities" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Professional_Responsibilities]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Professional_Responsibilities'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Professional_Responsibilities"> Professional
+                                                                                    for="customCheck"> Professional
                                                                                     Responsibilities</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-4">
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Lifting_Carrying" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Lifting_Carrying]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Lifting_Carrying'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Lifting_Carrying">
+                                                                                    for="customCheck3">
                                                                                     Lifting/Carrying</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Using_Computer" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Using_Computer]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Using_Computer'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Using_Computer">Using
+                                                                                    for="customCheck">Using
                                                                                     Computer</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Playing_Sports" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Playing_Sports]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Playing_Sports'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck1">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Playing_Sports">Playing
+                                                                                    for="customCheck1">Playing
                                                                                     Sports</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Twisting_Turning" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Twisting_Turning]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Twisting_Turning'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck2">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Twisting_Turning">Twisting/Turning</label>
+                                                                                    for="customCheck2">Twisting/Turning</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Eating" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Eating]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Eating'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Eating">Eating</label>
+                                                                                    for="customCheck3">Eating</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Self_Care1" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Self_Care1]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Self_Care1'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Self_Care1">Self-Care</label>
+                                                                                    for="customCheck">Self-Care</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Movement1" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Movement1]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Movement1'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck1">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Movement1">Movement</label>
+                                                                                    for="customCheck1">Movement</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Donning_Doffing" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Donning_Doffing]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Donning_Doffing'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck2">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Donning_Doffing">Donning/Doffing
+                                                                                    for="customCheck2">Donning/Doffing
                                                                                     Shoes, Clothing, Etc</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Writing_Typing" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Writing_Typing]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Writing_Typing'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Writing_Typing">Writing/Typing</label>
+                                                                                    for="customCheck3">Writing/Typing</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Driving" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Driving]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Driving'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Driving">Driving</label>
+                                                                                    for="customCheck">Driving</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Reaching" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Reaching]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Reaching'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck1">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Reaching">Reaching</label>
+                                                                                    for="customCheck1">Reaching</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Grasping" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Grasping]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Grasping'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck2">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Grasping">Grasping</label>
+                                                                                    for="customCheck2">Grasping</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Opening_jar" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Opening_jar]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Opening_jar'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck3">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Opening_jar">Opening
+                                                                                    for="customCheck3">Opening
                                                                                     jar</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Realising_grip" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Realising_grip]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Realising_grip'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Realising_grip">Realising
-                                                                                    grip</label>
+                                                                                    for="customCheck">Realising grip</label>
                                                                             </div>
                                                                             <div class="custom-control custom-checkbox">
                                                                                 <input type="checkbox"
-                                                                                    class="custom-control-input checkboxclick"
-                                                                                    id="Activities_of_Current_Limitations_Playing_Musical_instruments" name="Demographic[Activities_of_Current_Limitations][checkbox][Activities_of_Current_Limitations_Playing_Musical_instruments]" <?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['checkbox']['Activities_of_Current_Limitations_Playing_Musical_instruments'])) ? ' checked' : '' ?>>
+                                                                                    class="custom-control-input"
+                                                                                    id="customCheck">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Activities_of_Current_Limitations_Playing_Musical_instruments">Playing Musical
-                                                                                    instruments</label>
+                                                                                    for="customCheck">Playing Musical instruments</label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -2079,7 +2086,7 @@ tr {
                                                                         <div class="col-md-3">
                                                                             <p class="boldfont">Other</p>
                                                                         </div>
-                                                                        <div class="col-md-9"><input type="text" name="Demographic[Activities_of_Current_Limitations][text][Other]"  value="<?php echo (!empty($raw_data['Demographic']['Activities_of_Current_Limitations']['text']['Other'])) ? $raw_data['Demographic']['Activities_of_Current_Limitations']['text']['Other'] : '' ?>" 
+                                                                        <div class="col-md-9"><input type="text"
                                                                                 class="form-control"
                                                                                 placeholder="Info" /></div>
                                                                     </div>
@@ -2106,8 +2113,8 @@ tr {
                                                                     <div class="row">
                                                                         <div class="col-md-3">
                                                                             <div class="custom-control custom-radio">
-                                                                                <input type="radio" name="Demographic[Level_Of_Independence][radio]" value="Fully Independent" <?php echo (!empty($raw_data['Demographic']['Level_Of_Independence']['radio']) && $raw_data['Demographic']['Level_Of_Independence']['radio']=="Fully Independent" ) ? ' checked' : '' ?>  
-                                                                                    class="custom-control-input" id="Fully_Independent">
+                                                                                <input type="radio"  name="Demographic[Level_Of_Independence][radio]" value="Fully Independent"   
+                                                                                    class="custom-control-input">
                                                                                 <label class="custom-control-label"
                                                                                     for="Fully_Independent">Fully
                                                                                     Independent</label>
@@ -2115,32 +2122,32 @@ tr {
                                                                         </div>
                                                                         <div class="col-md-3">
                                                                             <div class="custom-control custom-radio">
-                                                                                <input type="radio" id="Minimal_assistance"
-                                                                                name="Demographic[Level_Of_Independence][radio]" value="Minimal Assistance" <?php echo (!empty($raw_data['Demographic']['Level_Of_Independence']['radio']) && $raw_data['Demographic']['Level_Of_Independence']['radio']=="Minimal assistance" ) ? ' checked' : '' ?>
+                                                                                <input type="radio" id="customRadio42"
+                                                                                    name="customRadio"
                                                                                     class="custom-control-input">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Minimal_assistance">Minimal
-                                                                                    Assistance</label>
+                                                                                    for="customRadio42">Minimal
+                                                                                    assistance</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-3">
                                                                             <div class="custom-control custom-radio">
-                                                                                <input type="radio" id="Moderate_assistance"
-                                                                                name="Demographic[Level_Of_Independence][radio]"  value="Moderate Assistance" <?php echo (!empty($raw_data['Demographic']['Level_Of_Independence']['radio']) && $raw_data['Demographic']['Level_Of_Independence']['radio']=="Moderate assistance" ) ? ' checked' : '' ?>
+                                                                                <input type="radio" id="customRadio43"
+                                                                                    name="customRadio"
                                                                                     class="custom-control-input">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Moderate_assistance">Moderate
-                                                                                    Assistance</label>
+                                                                                    for="customRadio43">Moderate
+                                                                                    assistance</label>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-3">
                                                                             <div class="custom-control custom-radio">
-                                                                                <input type="radio" id="Maximal_assistance"
-                                                                                name="Demographic[Level_Of_Independence][radio]" value="Maximal Assistance" <?php echo (!empty($raw_data['Demographic']['Level_Of_Independence']['radio']) && $raw_data['Demographic']['Level_Of_Independence']['radio']=="Maximal assistance" ) ? ' checked' : '' ?>
+                                                                                <input type="radio" id="customRadio43"
+                                                                                    name="customRadio"
                                                                                     class="custom-control-input">
                                                                                 <label class="custom-control-label"
-                                                                                    for="Maximal_assistance">Maximal
-                                                                                    Assistance</label>
+                                                                                    for="customRadio43">Maximal
+                                                                                    assistance</label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -2159,7 +2166,8 @@ tr {
                                                             <span class=" span_block atag_name_14">+</span>BMI Calculation
                                                             :
                                                         </div>
-                                                        <div  class="col-md-12  m-b-10   hidedefault blockdiv block_name_14">
+                                                        <div
+                                                            class="col-md-12  m-b-10   hidedefault blockdiv block_name_14">
                                                             <div class="row mt-3">
                                                                 <div class="col-md-12">
 
@@ -2167,43 +2175,44 @@ tr {
                                                                         <div class="col-md-1">
                                                                             <p class="boldfont mt-1">Height:</p>
                                                                         </div>
-                                                                        <div class="col-md-1">
-                                                                            <input type="text" id="height" name="Demographic[BMI_Calculation][text][Height]"  value="<?php echo (!empty($raw_data['Demographic']['BMI_Calculation']['text']['Height'])) ? $raw_data['Demographic']['BMI_Calculation']['text']['Height'] : '' ?>" class="form-control numbersOnly calculateBMI"
+                                                                        <div class="col-md-2">
+                                                                            <input type="text" class="form-control "
                                                                                 placeholder="Info"
                                                                                 style="padding:10px 22px;">
                                                                         </div>
-                                                                        <div class="col-md-1 ">
-                                                                            <select  
-                                                                            id="height_unit" name="Demographic[BMI_Calculation][height_unit]"
-                                                                                class="form-control show-tick mb-3 input-group calculateBMI">
-                                                                                 
-                                                                                <option value="cm" <?php echo (!empty($raw_data['Demographic']['BMI_Calculation']['height_unit']) && $raw_data['Demographic']['BMI_Calculation']['height_unit']=="cm" ) ? ' selected' : '' ?>>cm</option>
-                                                                                <option value="ft" <?php echo (!empty($raw_data['Demographic']['BMI_Calculation']['height_unit']) && $raw_data['Demographic']['BMI_Calculation']['height_unit']=="ft" ) ? ' selected' : '' ?>>ft</option>
+                                                                        <div class="col-md-2 ">
+                                                                            <select id="ddl_salutation"
+                                                                                name="ddl_salutation"
+                                                                                class="form-control show-tick mb-3 input-group">
+                                                                                <option value="" selected>Select...
+                                                                                </option>
+                                                                                <option value="Mr.">cm</option>
+                                                                                <option value="Ms.">ft</option>
 
                                                                             </select>
                                                                         </div>
                                                                         <div class="col-md-1">
                                                                             <p class="boldfont mt-1">Weight:</p>
                                                                         </div>
-                                                                        <div class="col-md-1">
-                                                                            <input type="text"  id="weight" name="Demographic[BMI_Calculation][text][Weight]"  value="<?php echo (!empty($raw_data['Demographic']['BMI_Calculation']['text']['Weight'])) ? $raw_data['Demographic']['BMI_Calculation']['text']['Weight'] : '' ?>" class="form-control numbersOnly calculateBMI"  placeholder="Info"   style="padding:10px 22px;">
+                                                                        <div class="col-md-2">
+                                                                            <input type="text" class="form-control "
+                                                                                placeholder="Info"
+                                                                                style="padding:10px 22px;">
                                                                         </div>
-                                                                        <div class="col-md-1 ">
-                                                                            <select   id="weight_unit" name="Demographic[BMI_Calculation][weight_unit]" 
-                                                                                class="form-control show-tick mb-3 input-group calculateBMI">
-                                                                                
-                                                                                <option value="kg" <?php echo (!empty($raw_data['Demographic']['BMI_Calculation']['weight_unit']) && $raw_data['Demographic']['BMI_Calculation']['weight_unit']=="kg" ) ? ' selected' : '' ?>>kg</option>
-                                                                                <option value="pound" <?php echo (!empty($raw_data['Demographic']['BMI_Calculation']['weight_unit']) && $raw_data['Demographic']['BMI_Calculation']['weight_unit']=="pound" ) ? ' selected' : '' ?>>pound</option>
+                                                                        <div class="col-md-2 ">
+                                                                            <select id="ddl_salutation"
+                                                                                name="ddl_salutation"
+                                                                                class="form-control show-tick mb-3 input-group">
+                                                                                <option value="" selected>Select...
+                                                                                </option>
+                                                                                <option value="Mr.">kg</option>
+                                                                                <option value="Ms.">pound</option>
 
                                                                             </select>
                                                                         </div>
                                                                         <div class="col-md-1">
-                                                                            <p class="boldfont mt-1 ">BMI: </p>
-                                                                        </div>    
-
-                                                                        <div class="col-md-1">   <input type="text"  id="bmi_result" name="Demographic[BMI_Calculation][bmi_result]"  value="<?php echo (!empty($raw_data['Demographic']['BMI_Calculation']['bmi_result'])) ? $raw_data['Demographic']['BMI_Calculation']['bmi_result'] : '' ?>" class="form-control numbersOnly calculateBMI"  placeholder="Info"   style="padding:10px 22px;">    
-                                                                        </div>   
-                                                                        
+                                                                            <p class="boldfont mt-1">BMI:</p>
+                                                                        </div>
 
                                                                     </div>
 
@@ -2215,21 +2224,6 @@ tr {
                                                     </div>
                                                 </div>
                                                 <!--end of new block14 -->
-                                                <!--blockcomment1 -->
-                                                <div class="col-sm-12 m-b-10 ">
-                                                    <div id="101Field-1-comment1" class="row">
-                                                        <div class="col-md-12 labelclass  semibold container-space lessgreyTxt showblocks1"
-                                                            id="ahref_name_comment1">
-                                                            <span class=" span_block atag_name_comment1"></span>Comment :
-                                                        </div>
-                                                        <div class="col-md-12 block_name_comment11">
-                                                            <?php //print_r($raw_data['Demographic']);?>
-                                                         <textarea name="Demographic[Comment][text]"   id="Demographic_comment" class="form-control textarea"><?php echo (!empty($raw_data['Demographic']['Comment']['text'])) ? $raw_data['Demographic']['Comment']['text'] : '' ?></textarea>    
-                                                        </div>
-                                                        <div class="clearfix"></div>
-                                                    </div>
-                                                </div>
-                                                <!--end of new blockcomment1 -->
                                             </div>
                                             <div role="tabpanel" class="tab-pane" id="Observation">
                                                 <!--newblock17 -->
@@ -16480,65 +16474,7 @@ $(function() {
 
     });
 });
+ //$('input[type=checkbox]').prop('checked', true);
+ //$('input[type=radio]').prop('checked', true);
 
-function calculateBMI() {
-    let  measure, bmi, error ;
-
-    let weight = parseInt(document.querySelector("#weight").value);
-    let height = parseInt(document.querySelector("#height").value);
-    let weight_unit = document.querySelector("#weight_unit").value;
-    let height_unit = document.querySelector("#height_unit").value;
-
-
-    error = "Please enter some values";
-
-    if(height_unit=="ft"){
-        height = height * 30.48 ;
-    }
-    if(weight_unit=="pound"){
-        weight = weight * 0.453592 ;
-    }
-    height /= 100;
-    height *= height;
-    bmi = weight/height;
-    bmi = bmi.toFixed(1);
-
-    if (bmi <= 18.4) {
-        //measure = "Your BMI is " + bmi + " which means " + "you are Underweight";
-        measure = "" + bmi + "";
-    } else if (bmi >= 18.5 && bmi <= 24.9) {
-        measure = "" + bmi + "";
-    } else if (bmi >= 25 && bmi <= 29.9) {
-        measure = "" + bmi + "";
-    } else if (bmi >= 30) {
-        measure = "" + bmi + "";
-    }
-
-
-    if (weight === 0 ) {
-        document.getElementById("bmi_result").value = '';
-    } else if (height === 0){
-        document.getElementById("bmi_result").value = '';
-    }
-    else {
-
-        document.getElementById("bmi_result").value = (measure!=undefined) ? measure : '' ;
-    }
-    if (weight < 0) {
-        document.getElementById("bmi_result").value = "Negative Values not Allowed";
-    }
-}
-
-jQuery('.numbersOnly').keyup(function() {
-
-this.value = this.value.replace(/[^0-9\.]/g, '');
-
-});
-$(document.body).on('change', '.calculateBMI', function() {
-      // alert("aa");
-      calculateBMI();
- });
-     $('input[type=checkbox]').attr('checked', true);
-     $('input[type=radio]').attr('checked', true);
-     $('input[type=text]').val("other text field");
 </script>
